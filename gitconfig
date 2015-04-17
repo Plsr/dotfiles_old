@@ -1,0 +1,7 @@
+[user]
+	name = plsr
+	email = christianpoplawski@gmail.com
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
