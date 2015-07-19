@@ -14,6 +14,9 @@ if v:progname =~? "evim"
   finish
 endif
 
+"pathogen.vim
+execute pathogen#infect()
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -31,6 +34,10 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
+set number "enable line numbers
+autocmd VimEnter * NERDTree "Start NERDTree on vim startup
+autocmd VimEnter * wincmd p "Prevent cursor to start in NERDTRee window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "Close NERDTRee if its the last open vim window
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -96,3 +103,16 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
+"Set tab width
+set tabstop=2
+
+"Map 'za' to Spacebar
+nnoremap <Space> za
+
+"Folding
+au FileType javascript call JavaScriptFold()
+
+set foldmethod=manual
+set foldlevelstart=1
+
+let javaScript_fold=1         " JavaScript
