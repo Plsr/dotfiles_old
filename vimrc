@@ -116,3 +116,12 @@ set foldmethod=manual
 set foldlevelstart=1
 
 let javaScript_fold=1         " JavaScript
+
+" Enable powerline fonts in airline
+let g:airline_powerline_fonts = 1
+
+" Set airline theme
+let g:airline_theme='murmur'
+
+" Set color to 256
+set t_Co=256
