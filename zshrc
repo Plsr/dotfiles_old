@@ -79,7 +79,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#Aliases
-alias advm1='ssh mi1335@advm1.gm.fh-koeln.de'
-alias subl='open -a "Sublime Text"'
-alias vserver='ssh chrispop@87.106.30.27'
+#Source seperated aliases
+[ -f ~/.aliases ] && source ~/.aliases
