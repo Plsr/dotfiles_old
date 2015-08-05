@@ -125,3 +125,6 @@ let g:airline_theme='murmur'
 
 " Set color to 256
 set t_Co=256
+
+"Prevent pasting over words overwriting the cache
+xnoremap p pgvy
