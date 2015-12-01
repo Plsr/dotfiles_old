@@ -129,3 +129,7 @@ set t_Co=256
 "Prevent pasting over words overwriting the cache
 xnoremap p pgvy
 
+"Set tab navigation for NERDTree
+map <C-l> :tabn<CR>
+map <C-h> :tabp<CR>
+map <C-n> :tabnew<CR>
