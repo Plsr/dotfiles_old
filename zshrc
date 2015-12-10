@@ -81,3 +81,6 @@ source $ZSH/oh-my-zsh.sh
 
 #Source seperated aliases
 [ -f ~/.aliases ] && source ~/.aliases
+
+export NVM_DIR="/Users/Cheese/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
