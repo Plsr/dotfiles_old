@@ -133,3 +133,6 @@ xnoremap p pgvy
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
+
+"Show statusline immediatley, don't wait for a split to happen
+set laststatus=2
