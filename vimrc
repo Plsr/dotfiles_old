@@ -105,6 +105,7 @@ endif
 
 "Set tab width
 set tabstop=2
+set shiftwidth=2
 
 "Map 'za' to Spacebar
 nnoremap <Space> za
