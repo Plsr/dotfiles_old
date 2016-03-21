@@ -1,13 +1,14 @@
 " My vimrc. Not that impressive, huh?
 " Maintainer:	Christian Poplawski
+" @_chrispop
+" github.com/plsr
 " Last change:	March 21, 2016
 
 " Basics {{{
-" Set folding method to "marker" for this file
-:autocmd BufRead ~/dotfiles/vimrc setlocal foldmethod=marker
-set encoding=utf-8
-set list
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
+:autocmd BufRead ~/dotfiles/vimrc setlocal foldmethod=marker " Set folding method to "marker" for this file
+set encoding=utf-8 " Set character representation to utf-8
+set list " Make Whitespaces Visible
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:· " Show eols trails etc
 
 " }}}
 
