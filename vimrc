@@ -1,13 +1,16 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2014 Feb 05
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+" My vimrc. Not that impressive, huh?
+" Maintainer:	Christian Poplawski
+" Last change:	March 21, 2016
+
+" Basics {{{
+" Set folding method to "marker" for this file
+:autocmd BufRead ~/dotfiles/vimrc setlocal foldmethod=marker
+set encoding=utf-8
+set list
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
+
+" }}}
+
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
