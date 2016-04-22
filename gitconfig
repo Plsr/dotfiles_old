@@ -1,9 +1,13 @@
-[user]
-	name = plsr
-	email = christianpoplawski@gmail.com
+# Include private config (credentials etc.)
+[include]
+	path = ~/.gitconfig.local
 [credential]
 	helper = osxkeychain
 [push]
 	default = simple
 [core]
 	excludesfile = ~/.gitignore
+
+# Always sign commits (all commits are called with -S)
+[commit]
+	gpgsign = true
