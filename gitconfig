@@ -8,6 +8,3 @@
 [core]
 	excludesfile = ~/.gitignore
 
-# Always sign commits (all commits are called with -S)
-[commit]
-	gpgsign = true
