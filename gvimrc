@@ -10,3 +10,9 @@ set guioptions-=L
 
 " Remove highlighted background from tabs
 hi SpecialKey guibg=#212121
+
+" Set tab width
+set tabstop=2
+
+" Set mapleader to ,
+let mapleader=","
