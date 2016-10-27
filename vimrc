@@ -141,3 +141,12 @@ map <C-n> :tabnew<CR>
 
 "Show statusline immediatley, don't wait for a split to happen
 set laststatus=2
+
+"Remap :nohl to esc key to get rid of text highlights after searching
+nnoremap <silent> <esc> :noh<cr><esc>
+
+"Remove highlighting of tabs. whitespace, etc.
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight SpecialKey ctermbg=none
+

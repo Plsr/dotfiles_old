@@ -13,6 +13,13 @@ hi SpecialKey guibg=#212121
 
 " Set tab width
 set tabstop=2
+set softtabstop=0 noexpandtab
+set shiftwidth=2
 
 " Set mapleader to ,
 let mapleader=","
+
+"Remove highligting of tabs, spaces, ...
+hi Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight SpecialKey ctermbg=none
