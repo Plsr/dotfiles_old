@@ -109,7 +109,10 @@ endif
 
 "Set tab width
 set tabstop=2
+set softtabstop=0
+set expandtab
 set shiftwidth=2
+set smarttab
 
 "Map 'za' to Spacebar
 nnoremap <Space> za
