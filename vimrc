@@ -129,7 +129,7 @@ let javaScript_fold=1         " JavaScript
 let g:airline_powerline_fonts = 1
 
 " Set airline theme
-let g:airline_theme='murmur'
+let g:airline_theme='bubblegum'
 
 " Set color to 256
 set t_Co=256
