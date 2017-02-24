@@ -129,7 +129,7 @@ let javaScript_fold=1         " JavaScript
 let g:airline_powerline_fonts = 1
 
 " Set airline theme
-let g:airline_theme='bubblegum'
+  let g:airline_theme='oceanicnext'
 
 " Set color to 256
 set t_Co=256
@@ -152,6 +152,10 @@ nnoremap <silent> <esc> :noh<cr><esc>
 hi Normal ctermbg=none
 highlight NonText ctermbg=none
 highlight SpecialKey ctermbg=none
+
+" Colorscheme
+syntax enable
+colorscheme OceanicNext
 
 " NERDTree, Airline & devicon -------------- {{{
   " set a NERD Patched font for devicons to work
