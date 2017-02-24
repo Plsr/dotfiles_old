@@ -41,7 +41,9 @@ set incsearch		" do incremental searching
 set number "enable line numbers
 autocmd VimEnter * NERDTree "Start NERDTree on vim startup
 autocmd VimEnter * wincmd p "Prevent cursor to start in NERDTRee window
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif "Close NERDTRee if its the last open vim window
+
+" Close NERDTree if its the only open buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
