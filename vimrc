@@ -153,3 +153,13 @@ hi Normal ctermbg=none
 highlight NonText ctermbg=none
 highlight SpecialKey ctermbg=none
 
+" NERDTree, Airline & devicon -------------- {{{
+  " set a NERD Patched font for devicons to work
+  set guifont=Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete\ Mono:h16
+
+  " after a re-source, fix syntax matching issues (concealing brackets):
+  if exists('g:loaded_webdevicons')
+    call webdevicons#refresh()
+  endif
+
+" }}}
