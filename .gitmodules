@@ -46,3 +46,6 @@
 [submodule "vim/bundle/oceanic-next"]
 	path = vim/bundle/oceanic-next
 	url = git@github.com:mhartington/oceanic-next.git
+[submodule "vim/bundle/vim-indent-guides"]
+	path = vim/bundle/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
