@@ -159,13 +159,6 @@ highlight SpecialKey ctermbg=none
 syntax enable
 colorscheme OceanicNext
 
-" NERDTree, Airline & devicon -------------- {{{
-  " set a NERD Patched font for devicons to work
-  set guifont=Inconsolata\ for\ Powerline\ Nerd\ Font\ Complete\ Mono:h16
+" Neede for 
+set background=dark
 
-  " after a re-source, fix syntax matching issues (concealing brackets):
-  if exists('g:loaded_webdevicons')
-    call webdevicons#refresh()
-  endif
-
-" }}}

@@ -1,6 +1,3 @@
-" Color Scheme
-colorscheme stereokai
-
 " Font
 set guifont=Fira\ Mono\ for\ Powerline:h14
 
